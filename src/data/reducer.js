@@ -1,4 +1,4 @@
-import {Map, List} from "immutable";
+import { Map } from "immutable";
 
 const addTask = (state, { id, task }) => state.update("tasks", tasks =>
 	tasks.set(+id, Map({

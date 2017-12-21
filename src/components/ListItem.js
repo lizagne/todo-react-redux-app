@@ -1,15 +1,13 @@
 import React from 'react';
-import InputField from './InputField';
-import Delete from './Delete';
-import Complete from './Complete';
+import Input from './Input';
 
 
 const ListItem = () => (
 
 	<div>
-		<Complete />
-		<InputField />
-		<Delete />
+		<button>Complete</button>
+		<Input />
+		<button> Delete </button>
 	</div>
 
 );

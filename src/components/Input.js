@@ -1,16 +1,19 @@
 import React from 'react';
-import InputField from './InputField';
 import Priority from './Priority';
-import AddButton from './AddButton';
 
-const Input = () => (
+const Input = ({ onSubmit }) => {
 
-	<div>
-		<InputField />
-		<Priority />
-		<AddButton />
-	</div>
+	let input;
 
-);
+	return(
+		<div>
+			<form onSubmit={e => { onSubmit(input.value) }}>
+				<input placeholder="task here"></input>
+				<Priority />
+				<button  type="submit" className="btn-primary" onClick={ this.handleClick.bind(this) }>Add Task</button>
+			</form>
+		</div>
+	)
+};
 
 export default Input;

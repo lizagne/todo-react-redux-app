@@ -1,7 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import All from '../components/All';
-
-import Input from "../components/Input";
+// import Input from "../components/Input";
 import { connect } from 'react-redux';
 import { displayTasks } from "../data/actions/api";
 

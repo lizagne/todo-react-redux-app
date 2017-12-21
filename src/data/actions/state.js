@@ -1,5 +1,3 @@
-import React from 'react';
-
 //this is the state and referring to local actions.
 
 export const addTask = ({ task, id }) => {
