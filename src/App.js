@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from "./components/Header";
-import Input from "./components/Input";
 import All from "./containers/All";
+import Completed from './containers/Completed';
+import Incomplete from './containers/Incomplete';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+export default App => (
+
+	<Router>
+
+		<div>
+	    	<Header />
+	    	<Route exact path="/" component={ All }/>
+	    	<Route path="/incomplete" component={ Incomplete }/>
+	    	<Route path="/completed" component={ Completed }/>
+	  	</div>
+
+ 	</Router>
+
+);
 
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Input />
-        <All />
-      
-      </div>
-    );
-  }
-}
-
-export default App;
+		    	// <Route exact path="/" component={ All }/>

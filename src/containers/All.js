@@ -1,12 +1,18 @@
 import React from 'react';
-import ListItem from '../components/ListItem';
+import TaskList from '../components/TaskList';
+import Input from "../components/Input";
 
 const All = () => (
-
 	<div>
-		<ListItem />
-	</div>
+  		<TaskList />
+  	</div>
 
 );
 
 export default All;
+
+
+
+
+
+
