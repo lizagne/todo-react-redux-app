@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const AddButton = () => (
+class AddButton extends Component {
 
-	<button>
-		Add Task
-	</button>
-);
+	handleClick(){
+		this.props.onClick();
+	};
 
+	render() {
+		return (
+		<button  className="btn-primary" onClick={this.handleClick.bind(this)}>
+			Add Task
+		</button>
+		);
+	}
+}
 
 export default AddButton;

@@ -1,15 +1,24 @@
 import React from 'react';
-import TaskList from '../components/TaskList';
+import All from '../components/All';
+
 import Input from "../components/Input";
+import { connect } from 'react-redux';
+import { displayTasks } from "../data/actions/api";
 
-const All = () => (
-	<div>
-  		<TaskList />
-  	</div>
+const mapStateToProps = state => {
+	return {
+		tasks: state.get("tasks"),
+	};
+};
 
-);
 
-export default All;
+const mapDispatchToProps = dispatch => {
+	return {
+		onLoad: () => dispatch(displayTasks()),
+	};
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(All);
 
 
 

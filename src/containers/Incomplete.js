@@ -1,11 +1,10 @@
 import React from 'react';
-import TaskList from '../components/TaskList';
+import All from '../components/All';
 import ListItem from '../components/ListItem';
 
 const Incomplete = () => (
 
 	<div>
-		<ListItem />
 	</div>
 
 );
